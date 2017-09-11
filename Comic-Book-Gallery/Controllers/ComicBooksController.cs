@@ -9,9 +9,9 @@ namespace Comic_Book_Gallery.Controllers
     public class ComicBooksController : Controller
     {
         // GET: ComicBooks
-        public ActionResult Index()
+        public string Detail()
         {
-            return View();
+            return "Hello From the Comic book controller!";
         }
     }
 }
