@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Comic_Book_Gallery.Models
+﻿namespace Comic_Book_Gallery.Models
 {
     public class ComicBook
     {
@@ -14,22 +9,10 @@ namespace Comic_Book_Gallery.Models
         public Artist[] Artists { get; set;}
         public bool Favorite { get; set; }
 
-        public string DisplayText
-        {
-            get
-            {
-                return SeriesTitle + " # " + IssueNumber;
-            }
-        }
+        public string DisplayText => SeriesTitle + " # " + IssueNumber;
 
         //series-title-issuenumber.jpg
-        public string CoverImageFileName
-        {
-            get
-            {
-                return SeriesTitle.Replace(" ", "-")
+        public string CoverImageFileName => SeriesTitle.Replace(" ", "-")
                     .ToLower() + "-" + IssueNumber + ".jpg;";
-            }
-        }
     }
 }
