@@ -23,7 +23,6 @@ namespace Comic_Book_Gallery.Controllers
                 }
 
             };
-
             return View(model: comicBook);
         }
     }
